@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Aqiqah Muhammad Alfarisqi Nawir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }
+        .float { animation: float 4s ease-in-out infinite; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        body { background: linear-gradient(135deg, #e0f2fe 0%, #fef3c7 100%); font-family: 'Segoe UI', sans-serif; }
+    </style>
+</head>
+<body class="text-slate-800 p-4 md:p-10">
+
+    <div class="max-w-2xl mx-auto space-y-8">
+        <!-- Hero Section -->
+        <header class="text-center space-y-4 pt-10">
+            <div class="float text-6xl">🌙</div>
+            <h1 class="text-3xl font-bold text-blue-900">Aqiqah Muhammad Alfarisqi Nawir</h1>
+            <p class="italic text-lg">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+        </header>
+
+        <!-- Glassmorphism Card -->
+        <section class="glass rounded-3xl p-8 shadow-xl text-center space-y-6">
+            <p class="leading-relaxed">Assalamu'alaikum Warahmatullahi Wabarakatuh, dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir pada acara Aqiqah putra kami:</p>
+            
+            <div class="py-4">
+                <span class="text-5xl">👶</span>
+                <h2 class="text-2xl font-bold mt-2">Muhammad Alfarisqi Nawir</h2>
+                <p class="text-blue-800 font-semibold mt-2">Putra dari:</p>
+                <p>Bapak MUNAWIR, S.T & Ibu A.SRIRAHAYU PUTRIANI, S.M</p>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="grid gap-4">
+            <div class="glass rounded-2xl p-6 shadow-md">
+                <h3 class="font-bold text-blue-900 border-b border-blue-200 pb-2 mb-2">📅 Waktu & Tempat</h3>
+                <p>Rabu, 10 Juli 2026</p>
+                <p>09.00 WITA - Selesai</p>
+                <p>Kediaman Keluarga, Desa Lele, Morowali</p>
+                <a href="https://maps.app.goo.gl/386PKWPfG4dySRrj9" target="_blank" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition">Lihat Lokasi Maps</a>
+            </div>
+
+            <div class="glass rounded-2xl p-6 shadow-md">
+                <h3 class="font-bold text-blue-900 border-b border-blue-200 pb-2 mb-2">✨ Susunan Acara</h3>
+                <ul class="text-sm space-y-2">
+                    <li>🔹 Pembacaan Ayat Suci Al-Qur'an</li>
+                    <li>🔹 Tausiyah</li>
+                    <li>🔹 Prosesi Aqiqah</li>
+                    <li>🔹 Doa Bersama</li>
+                    <li>🔹 Ramah Tamah</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Prayer -->
+        <section class="text-center p-6 bg-blue-100/50 rounded-2xl">
+            <p class="text-sm italic">"Semoga Allah menjadikannya anak yang sholeh, berbakti kepada kedua orang tua, serta berguna bagi agama, bangsa, dan negara."</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center pb-10">
+            <p class="font-semibold">Keluarga Besar MUNAWIR, S.T & A.SRIRAHAYU PUTRIANI, S.M</p>
+            <p class="text-xs mt-4">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('opacity-100', 'translate-y-0');
+            });
+        });
+        document.querySelectorAll('section').forEach(s => {
+            s.classList.add('opacity-0', 'translate-y-10', 'transition', 'duration-1000');
+            observer.observe(s);
+        });
+    </script>
+</body>
+</html>
+
+```
